@@ -12,6 +12,7 @@ This repository traces the * Assertion at mini-codegen.c:1096, condition `! is_g
 - The error occures before any C# code from the DLL is exected!, I made a Console.WriteLine("This one is not printed on the stdout") at the entrypoint of the Method to demonstrate this
 
 - Dependency ZeroFromatter can be found here : https://github.com/alexinea/Alexinea.ZeroFormatter/  it is a valid nuget package. We are using alexineas version, since the original Zeroformatter had a Issue when running on DotnetCore 3.1 we encounterd https://github.com/neuecc/ZeroFormatter/issues/112
+- Source code is located in Skm.Holo.zip, just unzip to see.
 - While i made a whole lot of testruns, one time i encounterd a similar error on the build unfortunatly i was not able to reproduce the error or copy it.
 - Description: On build time (while the container was build) after the ```RUN nuget restore Skm.Holo.sln``` command the listing stopped at   
   ```GET https://api.nuget.org/v3-flatcontainer/system.runtime/index.json
@@ -24,6 +25,8 @@ printed an error very simular to the Nativ Crash Reporting:
 last package touched was system.io.compression!
 I assume, that the error is linked to System.IO.Compresssion but it is more like a gut feeling
 
+### Contact
+mhermelschmidt@skm-informatik.com
 
 ## Output on x86
 
@@ -118,4 +121,8 @@ Memory around native instruction pointer (0x7fff90094228):0x7fff90094218  02 00 
 =================================================================
 mono_gdb_render_native_backtraces not supported on this platform, unable to find gdb or lldb
 /init.sh: line 4:     9 Aborted                 (core dumped) mono Program.exe
-outta program```
+outta program ```
+
+
+
+
