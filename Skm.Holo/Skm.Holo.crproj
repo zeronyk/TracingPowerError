@@ -1,0 +1,13 @@
+<project outputDir="C:\Source\Skm.Holo\Confused" baseDir="C:\Source\Skm.Holo\Skm.Holo\bin\Release" xmlns="http://confuser.codeplex.com">
+  <module path="netstandard20\Skm.Holo.dll">
+    <rule pattern="match('Skm.Holo.SKMXSecuredContainer')" inherit="false">
+      <protection id="anti debug" />
+      <protection id="anti ildasm" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="rename" />
+    </rule>
+  </module>
+  <probePath>C:\Source\Skm.Holo\packages\ZeroFormatter.1.6.4\lib\netstandard1.6</probePath>
+  <probePath>C:\Source\Skm.Holo\packages\ZeroFormatter.Interfaces.1.6.4\lib\netstandard1.1</probePath>
+</project>

@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/hermel/Documents/power-test/Skm.Holo/Skm.Holo/Skm.Holo.csproj": {}
+  },
+  "projects": {
+    "/home/hermel/Documents/power-test/Skm.Holo/Skm.Holo/Skm.Holo.csproj": {
+      "version": "0.4.11",
+      "restore": {
+        "projectUniqueName": "/home/hermel/Documents/power-test/Skm.Holo/Skm.Holo/Skm.Holo.csproj",
+        "projectName": "Skm.Holo",
+        "projectPath": "/home/hermel/Documents/power-test/Skm.Holo/Skm.Holo/Skm.Holo.csproj",
+        "packagesPath": "/home/hermel/.nuget/packages/",
+        "outputPath": "/home/hermel/Documents/power-test/Skm.Holo/Skm.Holo/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/home/hermel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard20"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Alexinea.ZeroFormatter": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.IO.Compression.ZipFile": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.417/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

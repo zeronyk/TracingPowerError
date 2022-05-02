@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard20;net45</TargetFrameworks>
+    <Platforms>AnyCPU</Platforms>
+    <Configurations>Debug;Release</Configurations>
+    <Version>0.4.11</Version>
+    <Authors>S.K.M. Informatik GmbH</Authors>
+    <Copyright>Copyright © S.K.M. Informatik GmbH 2022</Copyright>
+    <AssemblyVersion>0.4.11.0</AssemblyVersion>
+    <FileVersion>0.4.11.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard20|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard20' ">
+    <Reference Include="UnityEngine.dll">
+      <Private>true</Private>
+    </Reference>
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="System.IO.Compression" />
+	  <PackageReference Include="Alexinea.ZeroFormatter" Version="1.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Zfc.Additional.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Zfc.Additional.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Alexinea.ZeroFormatter" Version="1.6.4" />
+  </ItemGroup>
+
+</Project>
